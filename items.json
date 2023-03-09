@@ -1,0 +1,289 @@
+{
+    "stac_version": "1.0.0",
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "stac_version": "1.0.0",
+            "id": "007b7139-ce42-5918-932a-41a48ddc6bd8",
+            "properties": {
+                "title": "S10E030_07.stac-item",
+                "cf": "83.0 dB",
+                "proj:epsg": 4326,
+                "launchdate": "2006-01-24",
+                "proj:shape": [
+                    22500,
+                    22500
+                ],
+                "platform": "ALOS/ALOS-2",
+                "odc:product": "alos_palsar_mosaic",
+                "instruments": [
+                    "palsar/palsar-2"
+                ],
+                "proj:transform": [
+                    0.00022222222222222231,
+                    0.0,
+                    30.0,
+                    0.0,
+                    -0.00022222222222222231,
+                    -10.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "odc:file_format": "GeoTIFF",
+                "odc:region_code": "S10E030",
+                "end_datetime": "2007-12-31T23:59:59Z",
+                "start_datetime": "2007-01-01T00:00:00Z",
+                "datetime": null,
+                "cubedash:region_code": "S10E030"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            30.0,
+                            -10.0
+                        ],
+                        [
+                            30.0,
+                            -15.000000000000002
+                        ],
+                        [
+                            35.0,
+                            -15.000000000000002
+                        ],
+                        [
+                            35.0,
+                            -10.0
+                        ],
+                        [
+                            30.0,
+                            -10.0
+                        ]
+                    ]
+                ]
+            },
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://explorer.dev.digitalearth.africa/stac/collections/alos_palsar_mosaic/items/007b7139-ce42-5918-932a-41a48ddc6bd8",
+                    "type": "application/json"
+                },
+                {
+                    "rel": "odc_yaml",
+                    "href": "https://explorer.dev.digitalearth.africa/dataset/007b7139-ce42-5918-932a-41a48ddc6bd8.odc-metadata.yaml",
+                    "type": "text/yaml",
+                    "title": "ODC Dataset YAML"
+                },
+                {
+                    "rel": "collection",
+                    "href": "https://explorer.dev.digitalearth.africa/stac/collections/alos_palsar_mosaic"
+                },
+                {
+                    "rel": "product_overview",
+                    "href": "https://explorer.dev.digitalearth.africa/product/alos_palsar_mosaic",
+                    "type": "text/html",
+                    "title": "ODC Product Overview"
+                },
+                {
+                    "rel": "alternative",
+                    "href": "https://explorer.dev.digitalearth.africa/dataset/007b7139-ce42-5918-932a-41a48ddc6bd8",
+                    "type": "text/html",
+                    "title": "ODC Dataset Overview"
+                }
+            ],
+            "assets": {
+                "hh": {
+                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_HH.tif",
+                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                    "title": "hh",
+                    "eo:bands": [
+                        {
+                            "name": "hh"
+                        }
+                    ],
+                    "proj:epsg": 4326,
+                    "proj:shape": [
+                        22500,
+                        22500
+                    ],
+                    "proj:transform": [
+                        0.00022222222222222231,
+                        0.0,
+                        30.0,
+                        0.0,
+                        -0.00022222222222222231,
+                        -10.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "roles": [
+                        "data"
+                    ]
+                },
+                "hv": {
+                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_HV.tif",
+                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                    "title": "hv",
+                    "eo:bands": [
+                        {
+                            "name": "hv"
+                        }
+                    ],
+                    "proj:epsg": 4326,
+                    "proj:shape": [
+                        22500,
+                        22500
+                    ],
+                    "proj:transform": [
+                        0.00022222222222222231,
+                        0.0,
+                        30.0,
+                        0.0,
+                        -0.00022222222222222231,
+                        -10.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "roles": [
+                        "data"
+                    ]
+                },
+                "date": {
+                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_date.tif",
+                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                    "title": "date",
+                    "eo:bands": [
+                        {
+                            "name": "date"
+                        }
+                    ],
+                    "proj:epsg": 4326,
+                    "proj:shape": [
+                        22500,
+                        22500
+                    ],
+                    "proj:transform": [
+                        0.00022222222222222231,
+                        0.0,
+                        30.0,
+                        0.0,
+                        -0.00022222222222222231,
+                        -10.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "roles": [
+                        "data"
+                    ]
+                },
+                "mask": {
+                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_mask.tif",
+                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                    "title": "mask",
+                    "eo:bands": [
+                        {
+                            "name": "mask"
+                        }
+                    ],
+                    "proj:epsg": 4326,
+                    "proj:shape": [
+                        22500,
+                        22500
+                    ],
+                    "proj:transform": [
+                        0.00022222222222222231,
+                        0.0,
+                        30.0,
+                        0.0,
+                        -0.00022222222222222231,
+                        -10.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "roles": [
+                        "data"
+                    ]
+                },
+                "linci": {
+                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_linci.tif",
+                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                    "title": "linci",
+                    "eo:bands": [
+                        {
+                            "name": "linci"
+                        }
+                    ],
+                    "proj:epsg": 4326,
+                    "proj:shape": [
+                        22500,
+                        22500
+                    ],
+                    "proj:transform": [
+                        0.00022222222222222231,
+                        0.0,
+                        30.0,
+                        0.0,
+                        -0.00022222222222222231,
+                        -10.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "roles": [
+                        "data"
+                    ]
+                }
+            },
+            "bbox": [
+                30.0,
+                -15.000000000000002,
+                35.0,
+                -10.0
+            ],
+            "stac_extensions": [
+                "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+                "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+            ],
+            "collection": "alos_palsar_mosaic"
+        }
+    ],
+    "links": [
+        {
+            "rel": "next",
+            "href": "https://explorer.dev.digitalearth.africa/stac/search?collections=alos_palsar_mosaic&limit=20&_o=20&_full=True"
+        },
+        {
+            "href": "https://explorer.dev.digitalearth.africa/stac/search",
+            "rel": "search",
+            "title": "Search",
+            "type": "application/geo+json",
+            "method": "GET"
+        },
+        {
+            "href": "https://explorer.dev.digitalearth.africa/stac/search",
+            "rel": "search",
+            "title": "Search",
+            "type": "application/geo+json",
+            "method": "POST"
+        },
+        {
+            "rel": "root",
+            "href": "https://explorer.dev.digitalearth.africa/stac"
+        }
+    ],
+    "numberReturned": 20,
+    "context": {
+        "page": 0,
+        "limit": 20,
+        "returned": 20,
+        "matched": 1900
+    },
+    "numberMatched": 1900
+}
