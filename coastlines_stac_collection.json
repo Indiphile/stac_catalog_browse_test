@@ -11,8 +11,8 @@
         "temporal": {
             "interval": [
                 [
-                    null,
-                    null
+                    "2001-01-01T00:00+00:00",
+                    "2021-01-01T00:00+00:00"
                 ]
             ]
         },
@@ -34,7 +34,7 @@
         },
         {
             "rel": "root",
-            "href": "https://explorer.dev.digitalearth.africa/stac"
+            "href": "https://raw.githubusercontent.com/Indiphile/stac_catalog_browse_test/master/catalog.json"
         }
     ]
 }

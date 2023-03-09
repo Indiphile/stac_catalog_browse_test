@@ -3,35 +3,35 @@
     "links": [
         {
             "rel": "root",
-            "href": "https://explorer.dev.digitalearth.africa/stac"
+            "href": "https://raw.githubusercontent.com/Indiphile/stac_catalog_browse_test/master/catalog.json"
         }
     ],
     "collections": [
         {
             "stac_version": "1.0.0",
-            "id": "alos_palsar_mosaic",
-            "title": "alos_palsar_mosaic",
+            "id": "dea_coastlines",
+            "title": "dea_coastlines",
             "type": "Collection",
-            "license": null,
-            "description": "ALOS/PALSAR and ALOS-2/PALSAR-2 annual mosaic tiles generated for use in the Data Cube - 25m pixel spacing, WGS84. These tiles are derived from the orignal JAXA mosaics with conversion to GeoTIFF.",
+            "license": "CC-BY-4.0",
+            "description": "Coastlines for Africa produced by Digital Earth Africa.",
             "properties": {},
             "providers": [],
             "extent": {
                 "temporal": {
                     "interval": [
                         [
-                            "2007-01-01T00:00:00+00:00",
-                            "2021-01-01T00:00:00+00:00"
+                            "2001-01-01T00:00+00:00",
+                            "2021-01-01T00:00+00:00"
                         ]
                     ]
                 },
                 "spatial": {
                     "bbox": [
                         [
-                            -20.000000000000004,
-                            -35.019721543030116,
-                            55.000000000000014,
-                            39.99999999999999
+                            -17.529918743821995,
+                            -34.832866046097855,
+                            51.34923359460542,
+                            37.34408308455104
                         ]
                     ]
                 }
@@ -39,14 +39,13 @@
             "links": [
                 {
                     "rel": "items",
-                    "href": "https://explorer.dev.digitalearth.africa/stac/collections/alos_palsar_mosaic/items"
+                    "href": "https://raw.githubusercontent.com/digitalearthafrica/deafrica-coastlines/main/metadata/coastlines_stac_item.json"
                 },
                 {
                     "rel": "root",
-                    "href": "https://explorer.dev.digitalearth.africa/stac"
+                    "href": "https://raw.githubusercontent.com/Indiphile/stac_catalog_browse_test/master/catalog.json"
                 }
             ]
         }
-
     ]
 }

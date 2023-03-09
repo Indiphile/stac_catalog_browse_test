@@ -10,11 +10,11 @@
             "description": "All vector product collections",
             "rel": "children",
             "type": "application/json",
-            "href": "https://explorer.dev.digitalearth.africa/stac/collections"
+            "href": "https://raw.githubusercontent.com/Indiphile/stac_catalog_browse_test/master/collections.json"
         },
         {
             "rel": "self",
-            "href": "https://deafrica-services.s3.af-south-1.amazonaws.com/coastlines/v0.4.0/coastlines_stac_catalog.json"
+            "href": "https://raw.githubusercontent.com/Indiphile/stac_catalog_browse_test/master/catalog.json"
         },
         {
             "title": "coastlines_stac_colllection",

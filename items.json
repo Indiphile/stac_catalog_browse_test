@@ -5,285 +5,107 @@
         {
             "type": "Feature",
             "stac_version": "1.0.0",
-            "id": "007b7139-ce42-5918-932a-41a48ddc6bd8",
+            "id": "deafricacoastlines_v0.4.0.shp.zip",
             "properties": {
-                "title": "S10E030_07.stac-item",
-                "cf": "83.0 dB",
+                "format": "shapefile",
                 "proj:epsg": 4326,
-                "launchdate": "2006-01-24",
                 "proj:shape": [
-                    22500,
-                    22500
-                ],
-                "platform": "ALOS/ALOS-2",
-                "odc:product": "alos_palsar_mosaic",
-                "instruments": [
-                    "palsar/palsar-2"
+                    768,
+                    732
                 ],
                 "proj:transform": [
-                    0.00022222222222222231,
+                    0.09409720264812489,
                     0.0,
-                    30.0,
+                    -17.529918743821995,
                     0.0,
-                    -0.00022222222222222231,
-                    -10.0,
+                    -0.09398040251386575,
+                    37.34408308455104,
                     0.0,
                     0.0,
                     1.0
                 ],
-                "odc:file_format": "GeoTIFF",
-                "odc:region_code": "S10E030",
-                "end_datetime": "2007-12-31T23:59:59Z",
-                "start_datetime": "2007-01-01T00:00:00Z",
-                "datetime": null,
-                "cubedash:region_code": "S10E030"
+                "datetime": "2023-01-19T17:43:19.930727Z",
+                "provider": "Digital Earth Africa"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            30.0,
-                            -10.0
+                            -17.529918743821995,
+                            -34.832866046097855
                         ],
                         [
-                            30.0,
-                            -15.000000000000002
+                            51.34923359460542,
+                            -34.832866046097855
                         ],
                         [
-                            35.0,
-                            -15.000000000000002
+                            51.34923359460542,
+                            37.34408308455104
                         ],
                         [
-                            35.0,
-                            -10.0
+                            -17.529918743821995,
+                            37.34408308455104
                         ],
                         [
-                            30.0,
-                            -10.0
+                            -17.529918743821995,
+                            -34.832866046097855
                         ]
                     ]
                 ]
             },
             "links": [
                 {
-                    "rel": "self",
-                    "href": "https://explorer.dev.digitalearth.africa/stac/collections/alos_palsar_mosaic/items/007b7139-ce42-5918-932a-41a48ddc6bd8",
+                    "rel": "product_overview",
+                    "href": "https://geoserver.digitalearth.africa/geoserver/coastlines/wms?service=WMS&version=1.1.0&request=GetMap&layers=coastlines%3Acoastlines_v0_4_0_shorelines_annual&bbox=-17.530020617134365%2C-34.83347119293824%2C51.41527617299833%2C37.358192510742306&width=733&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers",
                     "type": "application/json"
                 },
                 {
-                    "rel": "odc_yaml",
-                    "href": "https://explorer.dev.digitalearth.africa/dataset/007b7139-ce42-5918-932a-41a48ddc6bd8.odc-metadata.yaml",
-                    "type": "text/yaml",
-                    "title": "ODC Dataset YAML"
+                    "rel": "product_documentation",
+                    "href": "https://docs.digitalearthafrica.org/en/latest/data_specs/Coastlines_specs.html",
+                    "type": "text/html"
+                },
+                {
+                    "rel": "self",
+                    "href": "https://raw.githubusercontent.com/Indiphile/stac_catalog_browse_test/master/coastlines_stac_item.json",
+                    "type": "application/json"
                 },
                 {
                     "rel": "collection",
-                    "href": "https://explorer.dev.digitalearth.africa/stac/collections/alos_palsar_mosaic"
+                    "href": "https://raw.githubusercontent.com/digitalearthafrica/deafrica-coastlines/main/metadata/coastlines_stac_collection.json"
                 },
                 {
-                    "rel": "product_overview",
-                    "href": "https://explorer.dev.digitalearth.africa/product/alos_palsar_mosaic",
-                    "type": "text/html",
-                    "title": "ODC Product Overview"
-                },
-                {
-                    "rel": "alternative",
-                    "href": "https://explorer.dev.digitalearth.africa/dataset/007b7139-ce42-5918-932a-41a48ddc6bd8",
-                    "type": "text/html",
-                    "title": "ODC Dataset Overview"
+                    "rel": "root",
+                    "href": "https://raw.githubusercontent.com/Indiphile/stac_catalog_browse_test/master/catalog.json"
                 }
             ],
             "assets": {
-                "hh": {
-                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_HH.tif",
-                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-                    "title": "hh",
-                    "eo:bands": [
-                        {
-                            "name": "hh"
-                        }
-                    ],
-                    "proj:epsg": 4326,
-                    "proj:shape": [
-                        22500,
-                        22500
-                    ],
-                    "proj:transform": [
-                        0.00022222222222222231,
-                        0.0,
-                        30.0,
-                        0.0,
-                        -0.00022222222222222231,
-                        -10.0,
-                        0.0,
-                        0.0,
-                        1.0
-                    ],
+                "coastlines_shapefile": {
+                    "href": "https://deafrica-services.s3.af-south-1.amazonaws.com/coastlines/v0.4.0/deafricacoastlines_v0.4.0.shp.zip",
+                    "type": "application/zip",
+                    "title": "coastlines",
                     "roles": [
                         "data"
                     ]
                 },
-                "hv": {
-                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_HV.tif",
-                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-                    "title": "hv",
-                    "eo:bands": [
-                        {
-                            "name": "hv"
-                        }
-                    ],
-                    "proj:epsg": 4326,
-                    "proj:shape": [
-                        22500,
-                        22500
-                    ],
-                    "proj:transform": [
-                        0.00022222222222222231,
-                        0.0,
-                        30.0,
-                        0.0,
-                        -0.00022222222222222231,
-                        -10.0,
-                        0.0,
-                        0.0,
-                        1.0
-                    ],
-                    "roles": [
-                        "data"
-                    ]
-                },
-                "date": {
-                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_date.tif",
-                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-                    "title": "date",
-                    "eo:bands": [
-                        {
-                            "name": "date"
-                        }
-                    ],
-                    "proj:epsg": 4326,
-                    "proj:shape": [
-                        22500,
-                        22500
-                    ],
-                    "proj:transform": [
-                        0.00022222222222222231,
-                        0.0,
-                        30.0,
-                        0.0,
-                        -0.00022222222222222231,
-                        -10.0,
-                        0.0,
-                        0.0,
-                        1.0
-                    ],
-                    "roles": [
-                        "data"
-                    ]
-                },
-                "mask": {
-                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_mask.tif",
-                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-                    "title": "mask",
-                    "eo:bands": [
-                        {
-                            "name": "mask"
-                        }
-                    ],
-                    "proj:epsg": 4326,
-                    "proj:shape": [
-                        22500,
-                        22500
-                    ],
-                    "proj:transform": [
-                        0.00022222222222222231,
-                        0.0,
-                        30.0,
-                        0.0,
-                        -0.00022222222222222231,
-                        -10.0,
-                        0.0,
-                        0.0,
-                        1.0
-                    ],
-                    "roles": [
-                        "data"
-                    ]
-                },
-                "linci": {
-                    "href": "s3://deafrica-input-datasets/alos_palsar_mosaic/2007/S10E030/S10E030_07_sl_linci.tif",
-                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-                    "title": "linci",
-                    "eo:bands": [
-                        {
-                            "name": "linci"
-                        }
-                    ],
-                    "proj:epsg": 4326,
-                    "proj:shape": [
-                        22500,
-                        22500
-                    ],
-                    "proj:transform": [
-                        0.00022222222222222231,
-                        0.0,
-                        30.0,
-                        0.0,
-                        -0.00022222222222222231,
-                        -10.0,
-                        0.0,
-                        0.0,
-                        1.0
-                    ],
+                "coastlines_geopackage": {
+                    "href": "https://deafrica-services.s3.af-south-1.amazonaws.com/coastlines/v0.4.0/deafricacoastlines_v0.4.0.gpkg",
+                    "type": "application/gpkg",
+                    "title": "coastlines",
                     "roles": [
                         "data"
                     ]
                 }
             },
             "bbox": [
-                30.0,
-                -15.000000000000002,
-                35.0,
-                -10.0
+                -17.529918743821995,
+                -34.832866046097855,
+                51.34923359460542,
+                37.34408308455104
             ],
             "stac_extensions": [
-                "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
                 "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-            ],
-            "collection": "alos_palsar_mosaic"
+            ]
         }
-    ],
-    "links": [
-        {
-            "rel": "next",
-            "href": "https://explorer.dev.digitalearth.africa/stac/search?collections=alos_palsar_mosaic&limit=20&_o=20&_full=True"
-        },
-        {
-            "href": "https://explorer.dev.digitalearth.africa/stac/search",
-            "rel": "search",
-            "title": "Search",
-            "type": "application/geo+json",
-            "method": "GET"
-        },
-        {
-            "href": "https://explorer.dev.digitalearth.africa/stac/search",
-            "rel": "search",
-            "title": "Search",
-            "type": "application/geo+json",
-            "method": "POST"
-        },
-        {
-            "rel": "root",
-            "href": "https://explorer.dev.digitalearth.africa/stac"
-        }
-    ],
-    "numberReturned": 20,
-    "context": {
-        "page": 0,
-        "limit": 20,
-        "returned": 20,
-        "matched": 1900
-    },
-    "numberMatched": 1900
+    ]
 }
